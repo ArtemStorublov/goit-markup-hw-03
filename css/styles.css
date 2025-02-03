@@ -32,7 +32,6 @@ img {
 
 button:hover,
 button:focus {
-  cursor: pointer;
   background-color: #404bbf;
 }
 address {
@@ -46,19 +45,18 @@ address {
 .header-contacts-link:focus {
   color: #404bbf;
 }
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 /*? задання max-ширини контенту сайту та відцентрування його */
 .container {
   max-width: 1158px;
@@ -71,7 +69,7 @@ address {
 
 .header {
   padding-top: 24px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -79,6 +77,7 @@ address {
 }
 .header-navigation {
   display: flex;
+  align-items: center;
   /* flex-grow: 1;
   justify-content: space-between; */
   /* margin-right: 332px; */
@@ -131,7 +130,6 @@ address {
   background-color: #2e2f42;
   padding: 188px 0px;
   margin: auto;
-  text-align: center;
 }
 
 .hero-title {
@@ -154,8 +152,11 @@ address {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+  display: block;
   padding: 16px 32px;
+  margin: 0 auto;
   min-width: 169px;
+  cursor: pointer;
 }
 
 /** ================================== */
@@ -203,31 +204,33 @@ address {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+
 .team-list {
   display: flex;
   gap: 24px;
+}
+.team-list-container {
+  padding: 32px 16px;
 }
 
 .team-list-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  padding-bottom: 32px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .team-list-avatar {
-  margin-bottom: 32px;
 }
 .team-list-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 .team-list-profession {
   font-size: 16px;
@@ -277,9 +280,7 @@ address {
   letter-spacing: 0.02em;
 }
 .portfolio-item-container {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -300,10 +301,9 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: block;
+  display: inline-block;
   max-width: 264px;
   margin-bottom: 16px;
-  margin-right: auto;
 }
 .footer-logo-color {
   color: #f4f4fd;
